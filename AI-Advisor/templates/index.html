@@ -9,14 +9,16 @@
 <body>
 
 <div class="container">
-    <h1>Scooter Recommendation</h1>
+    <div class="heading">
+        <h1>Scooter Recommendation</h1>
+    </div>
 
     <div class="input-group">
         <label for="budget">Budget</label>
         <input type="number" id="budget" placeholder="Enter your budget">
     </div>
 
-    <div class="input-group">
+    <div class="input-group" >
         <label for="primary_use">Primary Use</label>
         <select id="primary_use">
             <option value="city">City</option>
@@ -43,7 +45,8 @@
 
     <button onclick="getRecommendations()">Get Recommendations</button>
 
-    <div class="recommendations" id="recommendations"></div>
+    <!-- Recommendations Div -->
+    <div class="recommendations" id="recommendations" style="display:none;"></div>
 </div>
 
 <script>
@@ -70,7 +73,12 @@
         .then(response => response.json())
         .then(data => {
             const recommendationsDiv = document.getElementById('recommendations');
-            recommendationsDiv.innerHTML = `<h3>Top 3 Recommendations:</h3><ul>${data.map(item => `<li>${item}</li>`).join('')}</ul>`;
+            recommendationsDiv.innerHTML = `
+                <h3>Top 3 Recommendations:</h3>
+                <ul>
+                    ${data.map(item => `<li><i class="fas fa-motorcycle"></i> ${item}</li>`).join('')}
+                </ul>`;
+            recommendationsDiv.style.display = 'block';  // Show the recommendations div
         })
         .catch((error) => {
             console.error('Error:', error);
