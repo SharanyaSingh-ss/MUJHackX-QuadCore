@@ -10,4 +10,4 @@ AI-Advisor is a recommendation system designed to help users select the most sui
 
 ### CRM System
 This project provides a Customer Relationship Management (CRM) system designed to streamline and manage customer interactions, sales, and support throughout the lifecycle of electric scooters. The CRM system is currently integrated with Airtable for ease of use during development and testing, but for production environments, we recommend migrating to Salesforce or similar platforms for enhanced scalability, security, and customization.
-[Bikesetu CRM System Prototype](https://airtable.com/appSoXXTEINfvhKMB/shrLTvyl837Sm0q9v)
+[Bikesetu CRM System Prototype](https://airtable.com/appSoXXTEINfvhKMB/shrWa9rNFtw1P1osB)
