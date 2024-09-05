@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #102333, #eff8f9);
+    color: #42404d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,40 +9,90 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.heading{
+    color: #eff8f9;
+}
+
 .container {
-    background: white;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
+
+h1 {
+    margin-bottom: 20px;
+}
+
 .input-group {
     margin-bottom: 15px;
+    text-align: left;
 }
-label {
+
+.input-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-size: 14px;
 }
-input, select {
+
+.input-group input,
+.input-group select {
     width: 100%;
-    padding: 10px;
+    padding: 6px;
+    border: none;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
 }
+
 button {
-    background-color: #4CAF50;
+    background-color: #324146;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
+
 button:hover {
-    background-color: #45a049;
+    background-color: #0072ff;
 }
+
 .recommendations {
     margin-top: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
 }
+
+.recommendations h3 {
+    margin-bottom: 10px;
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.recommendations li i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ffdd57;
+}
+
+/* Add icon styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
